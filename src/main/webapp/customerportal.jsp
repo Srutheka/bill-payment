@@ -21,7 +21,6 @@
 
 <li><a href="billpayhome" class="a1">Bill Payment</a></li>&nbsp
 
-<li><a href="reminder" class="a1">Set Reminder</a></li>&nbsp
 <li><a href="/feedback1" class="a1"> FeedBack</a></li>&nbsp
 <li><a href="/beforehelp" class="a1">Help</a></li>&nbsp
 

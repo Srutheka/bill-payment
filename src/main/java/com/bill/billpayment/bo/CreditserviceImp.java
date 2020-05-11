@@ -27,7 +27,7 @@ private ebilldao edao;
 		Credit ad=al.get();
 		if(ad!=null)
 		{
-			return ad.getCvv().equals(credit.getCvv());
+			return ad.getCvv().equals(credit.getCvv()) && ad.getCardnumber().equals(credit.getCardnumber());
 			
 		}
 		return false;

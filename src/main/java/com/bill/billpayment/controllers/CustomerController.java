@@ -13,10 +13,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.bill.billpayment.domain.Credit;
 import com.bill.billpayment.domain.Customer;
 import com.bill.billpayment.bo.Creditservice;
 import com.bill.billpayment.bo.Customerservice;
@@ -27,11 +25,9 @@ import com.bill.billpayment.domain.Customerlogin;
 import com.bill.billpayment.domain.Feedbackquestions;
 import com.bill.billpayment.domain.Help;
 import com.bill.billpayment.domain.Recordbills;
-import com.bill.billpayment.domain.Reminders;
-import com.bill.billpayment.domain.Security;
+
 import com.bill.billpayment.domain.Security1;
 import com.bill.billpayment.domain.Vendor;
-import com.bill.billpayment.domain.electricity;
 
 @Controller
 
@@ -196,14 +192,7 @@ private HelpService hs;
 		return "customerportal";
 		}
 }
-	//for redirecting to set reminders page
-	@GetMapping("reminder")
-	public String reminderpage(Model model)
-	{
-		Reminders rem=new Reminders();
-		model.addAttribute("reminder",rem);
-		return "setreminder";
-	}
+	
 	
 
 @GetMapping(value="/forgotcuserid")

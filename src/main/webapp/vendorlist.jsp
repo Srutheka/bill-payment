@@ -30,35 +30,35 @@
 <th>email</th>
 <th>mobile</th>
 <th>website</th>
-<th>Cid</th>
-<th>cvd</th>
-<th>establishedyear</th>
+<th>Certificate Issued Date</th>
+<th>Certificate Valid Date</th>
+<th> Company establishedyear</th>
 </tr>
 
-<c:forEach items="${userList}" var="vendor_details">
+<c:forEach items="${userList}" var="vendors_details">
    <tr>
    
-   <td>${vendor_details.username}</td>
+   <td>${vendors_details.username}</td>
    
-   <td>${vendor_details.companyname}</td>
+   <td>${vendors_details.companyname}</td>
    
-   <td>${vendor_details.companyregno}</td>
+   <td>${vendors_details.companyregno}</td>
          
          
-            <td>${vendor_details.address}</td>
-            <td>${vendor_details.country}</td>
+            <td>${vendors_details.address}</td>
+            <td>${vendors_details.country}</td>
          
-            <td>${vendor_details.state}</td>
-            <td>${vendor_details.email}</td>
-            <td>${vendor_details.mobile}</td>
-               <td>${vendor_details.website}</td>
-                  <td>${vendor_details.cid}</td>
-                     <td>${vendor_details.cvd}</td>
-<td>${vendor_details.establishedyear}</td>
+            <td>${vendors_details.state}</td>
+            <td>${vendors_details.email}</td>
+            <td>${vendors_details.mobile}</td>
+               <td>${vendors_details.website}</td>
+                  <td>${vendors_details.cid}</td>
+                     <td>${vendors_details.cvd}</td>
+<td>${vendors_details.establishedyear}</td>
       
-   <td>${user.status}</td>
-   <td><a href="activate?id=${vendor_details.username}"><button>Activate</button></a></td>
-   <td><a href="deactivate?id=${vendor_details.username}"><button>Deactivate</button></a></td>
+   
+   <td><a href="activate?id=${vendors_details.username}"><button>Activate</button></a></td>
+   <td><a href="deactivate?id=${vendors_details.username}"><button>Deactivate</button></a></td>
    </tr>
    </c:forEach>
 <br>

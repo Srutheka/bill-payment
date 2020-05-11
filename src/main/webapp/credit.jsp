@@ -28,7 +28,7 @@ ${message }
 <tr>
 <td>Card Number :</td>
 <td>
-<form:input required="required" path="cardnumber" class="form-control"/>
+<form:input required="required" path="cardnumber" class="form-control" placeholder="enter 16 digit card number"/>
 <br>
  <form:errors path="cardnumber" cssClass="errors"></form:errors> 
 </td>

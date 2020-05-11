@@ -58,7 +58,7 @@ public class Vendor
 	@Column
 	private Date cvd;
     @Column
-	private int establishedyear;
+	private Date establishedyear;
 	
 
 	@Column(unique = true)
@@ -158,11 +158,12 @@ public class Vendor
 		this.website = website;
 	}
 	
-	public int getEstablishedyear() {
+	
+	public Date getEstablishedyear() {
 		return establishedyear;
 	}
 
-	public void setEstablishedyear(int establishedyear) {
+	public void setEstablishedyear(Date establishedyear) {
 		this.establishedyear = establishedyear;
 	}
 

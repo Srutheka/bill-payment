@@ -153,8 +153,8 @@ public class PaymentController {
 			
 				else
 				{
-				model.addAttribute("message", "Invalid ");
-					return "Gpay";
+				
+					return "payfailure";
 				}
 
 		}
@@ -191,15 +191,14 @@ public class PaymentController {
 				 
 						
 				}
-			
 				else
 				{
-				model.addAttribute("message", "Invalid ");
-					return "credit";
+					return "payfailure";
 				}
 
 		}
-		}	
+		}
+	
 		//electricity bill history
 		@GetMapping("ebillhistory")
 		public String display(HttpSession session,Model model)
@@ -302,8 +301,8 @@ public class PaymentController {
 					
 						else
 						{
-						model.addAttribute("message", "Invalid ");
-							return "Gpay";
+						
+							return "payfailure";
 						}
 
 				}
@@ -342,8 +341,8 @@ public class PaymentController {
 					
 						else
 						{
-						model.addAttribute("message", "Invalid ");
-							return "credit";
+						
+							return "payfailure";
 						}
 
 				}

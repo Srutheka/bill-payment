@@ -25,7 +25,7 @@ public class DthcreditserviceImp implements Dthcreditservice{
 		Dthcredit ad=al.get();
 		if(ad!=null)
 		{
-			return ad.getCvv().equals(credit.getCvv());
+			return ad.getCvv().equals(credit.getCvv()) && ad.getCardnumber().equals(credit.getCardnumber()) && ad.getName().equals(credit.getName());
 			
 		}
 		return false;
